@@ -41,9 +41,9 @@ public class CreateCourse extends HttpServlet {
     	Connection c = null;
         try
         {
-            String url = "jdbc:mysql://cs3.calstatela.edu/cs3220stu11?useSSL=false&allowPublicKeyRetrieval=true";
-            String username = "cs3220stu11";
-            String password = "StUtfZGU19Bd";
+            String url = ""; // Add your database URL here
+            String username = ""; // Add your username here
+            String password = ""; // Add your password here
             c = DriverManager.getConnection(url, username, password);
             
             String sql = "INSERT INTO courses (course_name) VALUES (?);";
