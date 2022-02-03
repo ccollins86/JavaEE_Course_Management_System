@@ -1,0 +1,1 @@
+The Java model classes provide object structure to the system controller. A database connection must be provided in the controller classes. 
