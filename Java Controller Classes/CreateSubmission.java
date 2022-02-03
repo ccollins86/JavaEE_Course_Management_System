@@ -36,9 +36,9 @@ public class CreateSubmission extends HttpServlet {
 		Connection c = null;
         try
         {
-            String url = "jdbc:mysql://cs3.calstatela.edu/cs3220stu11?useSSL=false&allowPublicKeyRetrieval=true";
-            String username = "cs3220stu11";
-            String password = "StUtfZGU19Bd";
+            String url = ""; // Add your database URL here
+            String username = ""; // Add your username here
+            String password = ""; // Add your password here
             c = DriverManager.getConnection(url, username, password);
             Statement stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT c.course_id, c.course_name, a.assignment_id, a.assignment_name\r\n"
@@ -95,9 +95,9 @@ public class CreateSubmission extends HttpServlet {
 		Connection c = null;
         try
         {
-            String url = "jdbc:mysql://cs3.calstatela.edu/cs3220stu11?useSSL=false&allowPublicKeyRetrieval=true";
-            String username = "cs3220stu11";
-            String password = "StUtfZGU19Bd";
+            String url = ""; // Add your database URL here
+            String username = ""; // Add your username here
+            String password = ""; // Add your password here
             c = DriverManager.getConnection(url, username, password);
             
             String sql = "INSERT INTO submissions (assignment_id, student_name, answer, submission_date) VALUES (?, ?, ?, ?);";
